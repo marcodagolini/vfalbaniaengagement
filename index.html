@@ -93,7 +93,15 @@
 		  $("#showContainer").click(function(){
 			  $(".showContainer").css("visibility","hidden");
 			  $(".container_disclaimer").css("visibility","visible");
-		  }); 
+		  });
+		  
+		  $('#accept').mousedown(function() {
+			  if (!$(this).is(':checked')) {
+				  $("#startChat").prop( "disabled", false );
+			  } else{
+				  $("#startChat").prop( "disabled", true );
+			  }
+		  });
 		  
 	  });
 	 
