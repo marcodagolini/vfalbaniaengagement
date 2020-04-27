@@ -36,7 +36,7 @@
   opacity: 0.5;
 }
 	
-.button {
+.showContainer {
   background:url(https://www.vodafone.al/ext_files/TOBi/icon_shadow.png) no-repeat;
   background-size: cover;
   width: 100px;
@@ -87,6 +87,14 @@
     
  <script>
 	 
+	  $(document).ready(function() {
+		  $("#startChat").click(function(){
+			  $(".showContainer").attr("visibility","hidden");
+			  $(".container_disclaimer").attr("visibility","visible");
+		  }); 
+		  
+	  });
+	 
 
    
     </script>
@@ -99,9 +107,9 @@
 
 <div class="engagement">
 
-<div class="button"></div>
+<div class="showContainer" id="showContainer"></div>
 
-<div class="container_disclaimer">
+<div class="container_disclaimer" id="disclaimer">
   <div class="header_disclaimer"></div>
   </br>
   <input style="float:left;" type="checkbox" id="accept" name="accept" value="accept">
