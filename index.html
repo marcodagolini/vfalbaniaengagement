@@ -5,6 +5,37 @@
 	
 <style>
 
+.startChat {
+    background-color: #4D4F72;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+	  border-radius: 4px;
+	  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	  font-family: "Myriad pro","Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",sans-serif;
+    position: absolute;
+    bottom:20px;
+    margin: 20px 20px;
+
+}
+.startChat:hover {
+    background-color: #060837;
+    color: white;	
+}
+
+.startChat:disabled,
+.startChat[disabled]{
+  background-color: #AAB5B2;
+  opacity: 0.5;
+}
+	
 .button {
   background:url(https://www.vodafone.al/ext_files/TOBi/icon_shadow.png) no-repeat;
   background-size: cover;
