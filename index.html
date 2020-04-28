@@ -6,13 +6,13 @@
 	
 <style>
 	
-.header_text{
+.header_text_lp{
    float: left;
    margin: 10px;
    color: white;
 }
 
-.startChat {
+.startChat_lp {
     background-color: red;
     border: none;
     color: white;
@@ -31,18 +31,18 @@
     margin: 20px 20px;
 
 }
-.startChat:hover {
+.startChat_lp:hover {
     background-color: #cf0000;
     color: white;	
 }
 
-.startChat:disabled,
-.startChat[disabled]{
+.startChat_lp:disabled,
+.startChat_lp[disabled]{
   background-color: #ff8a8a;
   opacity: 0.5;
 }
 	
-.showContainer {
+.showContainer_lp {
   background:url(https://www.vodafone.al/ext_files/TOBi/icon_shadow.png) no-repeat;
   background-size: cover;
   width: 100px;
@@ -52,7 +52,7 @@
   top: 40px;
 }
 
-.engagement{
+.engagement_lp{
   right:0px;
   bottom: 0px;
   width: 320px;
@@ -61,13 +61,13 @@
 
 }
 
-.disclaimer{
+.disclaimer_lp{
   position: relative;
   width: 200px;
   height: 200px;
 }
 
-.container_disclaimer{
+.container_disclaimer_lp{
   visibility:hidden;
   background-color: #f2f2f2;
   position: absolute;
@@ -79,7 +79,7 @@
   border-radius: 10px;
 }
 
-.header_disclaimer{
+.header_disclaimer_lp{
   background-color: red;
   background-size: cover;
   position: relative;
@@ -98,22 +98,22 @@
  <script>
 	 
 	  $(document).ready(function() {
-		  $("#showContainer").click(function(){
-			  $(".showContainer").css("visibility","hidden");
-			  $(".container_disclaimer").css("visibility","visible");
+		  $("#showContainer_lp").click(function(){
+			  $(".showContainer_lp").css("visibility","hidden");
+			  $(".container_disclaimer_lp").css("visibility","visible");
 		  });
 		  
-		  $('#accept').mousedown(function() {
+		  $('#accept_lp').mousedown(function() {
 			  if (!$(this).is(':checked')) {
-				  $("#startChat").prop( "disabled", false );
+				  $("#startChat_lp").prop( "disabled", false );
 			  } else{
-				  $("#startChat").prop( "disabled", true );
+				  $("#startChat_lp").prop( "disabled", true );
 			  }
 		  });
 		  
-		  $("#closeDisclaimer").click(function(){
-			  $(".showContainer").css("visibility","visible");
-			  $(".container_disclaimer").css("visibility","hidden");
+		  $("#closeDisclaimer_lp").click(function(){
+			  $(".showContainer_lp").css("visibility","visible");
+			  $(".container_disclaimer_lp").css("visibility","hidden");
 		  });
 		  
 		  
@@ -130,21 +130,21 @@
   
 <body>
 
-<div class="engagement">
+<div class="engagement_lp">
 
-<div class="showContainer" id="showContainer"></div>
+<div class="showContainer_lp" id="showContainer_lp"></div>
 
-<div class="container_disclaimer" id="disclaimer">
-  <div class="header_disclaimer">
+<div class="container_disclaimer_lp" id="disclaimer_lp">
+  <div class="header_disclaimer_lp">
 	<img src="https://res.cloudinary.com/djtjkiytu/image/upload/v1588061922/Picture.png" width="40" height="40" style="float:left;">
-	  <div class="header_text">Live Chat</div>
-	  <img id="closeDisclaimer" src="https://res.cloudinary.com/djtjkiytu/image/upload/v1588062805/unnamed.png" width="40" height="40" style="float:right;">
+	  <div class="header_text_lp">Live Chat</div>
+	  <img id="closeDisclaimer_lp" src="https://res.cloudinary.com/djtjkiytu/image/upload/v1588062805/unnamed.png" width="40" height="40" style="float:right;">
 	</div>
   </br>
-  <input style="float:left;" type="checkbox" id="accept" name="accept" value="accept">
+  <input style="float:left;" type="checkbox" id="accept_lp" name="accept" value="accept">
   <label style="float:left;" for="accept"> &nbsp;I accept&nbsp;</label>
   <a style="float:left;" href="https://www.vodafone.al/suport/" target="_blank">Terms & Conditions</a>
-  <button id="startChat" class="startChat" disabled>Start Chat</button>
+  <button id="startChat_lp" class="startChat_lp" disabled>Start Chat</button>
 </div>
 
 
