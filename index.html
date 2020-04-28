@@ -112,6 +112,13 @@
 			  }
 		  });
 		  
+		  $("#closeDisclaimer").click(function(){
+			  $(".showContainer").css("visibility","visible");
+			  $(".container_disclaimer").css("visibility","hidden");
+		  });
+		  
+		  
+		  
 	  });
 	 
 
@@ -132,6 +139,7 @@
   <div class="header_disclaimer">
 	<img src="https://res.cloudinary.com/djtjkiytu/image/upload/v1588061922/Picture.png" width="40" height="40" style="float:left;">
 	  <div class="header_text">Live Chat</div>
+	  <img id="closeDisclaimer" src="https://res.cloudinary.com/djtjkiytu/image/upload/v1588062805/unnamed.png" width="40" height="40" style="float:right;">
 	</div>
   </br>
   <input style="float:left;" type="checkbox" id="accept" name="accept" value="accept">
